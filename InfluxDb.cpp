@@ -83,8 +83,8 @@ boolean Influxdb::write(String data) {
   Serial.print(" <-- Response: ");
   Serial.print(httpResponseCode);
 
-  String response = http.getString();
-  Serial.println(" \"" + response + "\"");
+  //String response = http.getString();
+  //Serial.println(" \"" + response + "\"");
 
   boolean success;
   if (httpResponseCode == 204) {
